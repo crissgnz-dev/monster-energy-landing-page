@@ -20,8 +20,8 @@ export default function Header() {
   }, []);
 
   return (
-    <>
-      <div className="flex items-center justify-between min-h-10 p-5">
+    <div className="relative h-28 w-full">
+      <div className="flex bg-[#161616] items-center justify-between w-full min-h-10 p-5 fixed z-30">
         <div className="w-16">
           <img src={icon} alt="" />
         </div>
@@ -43,7 +43,7 @@ export default function Header() {
 
       {handleOpenMenu ? (
         <div
-          className="flex flex-col w-xs bg-stone-900 fixed top-0 right-0 z-30 h-full transition"
+          className="flex flex-col w-xs bg-stone-900 fixed top-0 right-0 z-40 h-full transition"
           onClick={(event) => {
             event.stopPropagation();
           }}
@@ -81,6 +81,6 @@ export default function Header() {
           </a>
         </div>
       ) : null}
-    </>
+    </div>
   );
 }
