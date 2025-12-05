@@ -7,9 +7,9 @@ export default function Ambassador() {
         Embajadores
       </h2>
       <div className="flex flex-col w-full mt-5 mb-15 gap-y-10">
-        <div className="flex w-full h-full bg-neutral-800 overflow-hidden rounded-xl flex-wrap">
-          <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/7e159192-6aae-485d-973d-83859c01362f.webp)] bg-cover bg-center w-150 h-100" />
-          <div className="w-145 p-5">
+        <div className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 w-full h-full bg-neutral-800 overflow-hidden rounded-xl">
+          <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/7e159192-6aae-485d-973d-83859c01362f.webp)] bg-cover bg-center w-full" />
+          <div className="w-full p-5">
             <p className="text-green-500 font-bold">BIKE</p>
             <h2 className="text-3xl font-bold">JOSE TORRES</h2>
             <p className="text-neutral-300">
@@ -44,7 +44,8 @@ export default function Ambassador() {
                 <a
                   href="https://www.instagram.com/malignobmx"
                   target="_blank"
-                  className="w-fit flex p-1 hover:scale-105 transition">
+                  className="w-fit flex p-1 hover:scale-105 transition"
+                >
                   <img src={Instagram} className="w-7 " />
                 </a>
               </div>
@@ -52,9 +53,9 @@ export default function Ambassador() {
           </div>
         </div>
 
-        <div className="flex w-full h-full bg-neutral-800 overflow-hidden rounded-xl flex-wrap">
-          <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/f284aee9-575e-4633-aaee-cde7c859cc04.webp)] bg-cover bg-center w-150 h-100" />
-          <div className="w-145 p-5">
+        <div className="grid grid-rows-2 md:grid-rows-1 md:grid-cols-2 w-full h-full bg-neutral-800 overflow-hidden rounded-xl">
+          <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/f284aee9-575e-4633-aaee-cde7c859cc04.webp)] bg-cover bg-center w-full" />
+          <div className="w-full p-5">
             <p className="text-green-500 font-bold">MOTOGP</p>
             <h2 className="text-3xl font-bold">FRANCESCO BAGNAIA</h2>
             <p className="text-neutral-300">
@@ -87,7 +88,8 @@ export default function Ambassador() {
                 <a
                   href="https://www.instagram.com/pecco63/"
                   target="_blank"
-                  className="w-fit flex p-1 hover:scale-105 transition">
+                  className="w-fit flex p-1 hover:scale-105 transition"
+                >
                   <img src={Instagram} className="w-7 " />
                 </a>
               </div>
@@ -99,7 +101,8 @@ export default function Ambassador() {
       <a
         href="https://www.monsterenergy.com/es-ar/roster/"
         target="_blank"
-        className="text-green-500 text-3xl border-2 px-12 py-2 rounded-lg uppercase active:text-green-300 ">
+        className="text-green-500 text-3xl border-2 px-12 py-2 rounded-lg uppercase active:text-green-300 "
+      >
         Ver más
       </a>
     </div>

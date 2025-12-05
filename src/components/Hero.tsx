@@ -85,12 +85,13 @@ export default function Hero() {
   );
 
   return (
-    <div className="bg-[url(/background.png)] w-full h-125 bg-cover grid grid-cols-2">
-      <div className="flex flex-col items-start justify-center pl-16">
+    <div className="bg-[url(/background.png)] w-full h-fit bg-cover grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-rows-2">
+      <div className="flex flex-col items-start justify-center pl-16 py-5">
         <div className="w-full ">
           <h2
             className="text-[5em] font-bold text-sm/20 uppercase transition"
-            style={{ color: color }}>
+            style={{ color: color }}
+          >
             {title}
           </h2>
           <p className="text-2xl w-full transition">{description}</p>
@@ -98,14 +99,15 @@ export default function Hero() {
             className="flex items-center w-fit gap-1 px-2 py-2 rounded-sm mt-5 cursor-pointer hover:scale-105 transition"
             href={url}
             target="_blank"
-            style={{ backgroundColor: color }}>
+            style={{ backgroundColor: color }}
+          >
             <img src={Cart} className="w-8" />
             <p className="text-[#000000] mt-0.5 text-2xl">COMPRAR AHORA</p>
           </a>
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center relative">
+      <div className="flex flex-col items-center justify-center relative sm:pt-5 sm:pb-10">
         <div className="flex flex-col justify-center items-center w-full">
           <img
             src={image}
@@ -123,7 +125,8 @@ export default function Hero() {
                   setDescription(monster.description);
                   setImage(monster.image);
                   setUrl(monster.url);
-                }}>
+                }}
+              >
                 <img src={monster.image} className="w-5 z-20" />
                 {monster.title === title ? (
                   <div
@@ -131,7 +134,8 @@ export default function Hero() {
                     style={{
                       filter: `drop-shadow(0px 10px 15px ${color}`,
                       zIndex: -1,
-                    }}></div>
+                    }}
+                  ></div>
                 ) : null}
               </button>
             ))}
