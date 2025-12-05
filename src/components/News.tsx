@@ -8,8 +8,7 @@ export default function News() {
         <a
           href="https://www.monsterenergy.com/skateboard/disorderly-conduct-tour-episodio-3"
           target="_blank"
-          className="bg-neutral-800 h-100 grid grid-rows-2 rounded-xl overflow-hidden"
-        >
+          className="bg-neutral-800 h-100 grid grid-rows-2 rounded-xl overflow-hidden hover:scale-101 transition">
           <div className="relative h-full w-full row-span-2">
             <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/1ccf05b1-c856-42c0-9909-78bbb902ab24.webp)] bg-cover bg-center w-full h-full" />
             <div className="absolute top-1 left-1 bg-neutral-800 p-1 px-2 rounded-lg">
@@ -33,8 +32,7 @@ export default function News() {
         <a
           href="https://www.monsterenergy.com/gaming/call-of-duty-next-beta-de-black-ops-7-nuevo-mapa-de-warzone-y-zombis"
           target="_blank"
-          className="bg-neutral-800 rounded-xl overflow-hidden h-100 grid grid-rows-2 col-span-2"
-        >
+          className="bg-neutral-800 rounded-xl overflow-hidden h-100 grid grid-rows-2 col-span-2 hover:scale-101 transition">
           <div className="relative h-full w-full row-span-2">
             <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/b8c74029-1e8e-4d6f-a35c-5d414330aa6f.webp)] bg-cover bg-center w-full h-full" />
             <div className="absolute top-1 left-1 bg-neutral-800 p-1 px-2 rounded-lg">
@@ -58,10 +56,9 @@ export default function News() {
         <a
           href="https://www.monsterenergy.com/2-ruedas/el-primer-gran-premio-de-bike-life-del-mundo"
           target="_blank"
-          className="bg-neutral-800 rounded-xl overflow-hidden h-100 grid grid-rows-2 col-span-2"
-        >
+          className="bg-neutral-800 rounded-xl overflow-hidden h-100 grid grid-rows-2 col-span-2 hover:scale-101 transition">
           <div className="relative h-full w-full row-span-2">
-           <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/7bf430a4-470d-4817-94bc-33548babeabd.webp)] bg-cover bg-center w-full h-full" />
+            <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/7bf430a4-470d-4817-94bc-33548babeabd.webp)] bg-cover bg-center w-full h-full" />
             <div className="absolute top-1 left-1 bg-neutral-800 p-1 px-2 rounded-lg">
               <p className="text-green-600 uppercase font-bold mt-1">
                 Motor / 2 Ruedas
@@ -86,10 +83,9 @@ export default function News() {
         <a
           href="https://www.monsterenergy.com/f1/el-primer-campeonato-de-constructores-consecutivo-para-mc-laren-desde-1991"
           target="_blank"
-          className="bg-neutral-800 rounded-xl w-full h-100 overflow-hidden grid grid-rows-2"
-        >
+          className="bg-neutral-800 rounded-xl w-full h-100 overflow-hidden grid grid-rows-2 hover:scale-101 transition">
           <div className="relative h-full w-full row-span-2">
-           <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/a2cdc461-7e55-4bbd-8e25-c5db0f6509da.webp)] bg-cover bg-center w-full h-full"/>
+            <div className="bg-[url(https://web-assests.monsterenergy.com/mnst/a2cdc461-7e55-4bbd-8e25-c5db0f6509da.webp)] bg-cover bg-center w-full h-full" />
             <div className="absolute top-1 left-1 bg-neutral-800 p-1 px-2 rounded-lg">
               <p className="text-green-600 uppercase font-bold mt-1">
                 Motor / F1
@@ -113,7 +109,10 @@ export default function News() {
         </a>
       </div>
 
-      <a href="https://www.monsterenergy.com/es-ar/news/" target="_blank" className="text-green-500 text-3xl border-2 px-12 py-2 rounded-lg uppercase active:text-green-300">
+      <a
+        href="https://www.monsterenergy.com/es-ar/news/"
+        target="_blank"
+        className="text-green-500 text-3xl border-2 px-12 py-2 rounded-lg uppercase active:text-green-300">
         Ver más
       </a>
     </div>
