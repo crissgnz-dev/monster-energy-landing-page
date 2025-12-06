@@ -85,29 +85,29 @@ export default function Hero() {
   );
 
   return (
-    <div className="bg-[url(/background.png)] w-full h-fit bg-cover grid lg:grid-cols-2 lg:grid-rows-1 sm:grid-rows-2">
-      <div className="flex flex-col items-start justify-center pl-16 py-5">
+    <div className="bg-[url(/background.png)] w-full h-fit bg-cover grid lg:py-15 lg:grid-cols-2 lg:grid-rows-1 sm:grid-rows-2 ">
+      <div className="flex flex-col items-start justify-center lg:pl-16 p-5 py-25">
         <div className="w-full ">
           <h2
-            className="text-[5em] font-bold text-sm/20 uppercase transition"
-            style={{ color: color }}
-          >
+            className="text-5xl xs:text-sm/18 md:text-[5em] md:text-sm/21 font-bold uppercase transition"
+            style={{ color: color }}>
             {title}
           </h2>
-          <p className="text-2xl w-full transition">{description}</p>
+          <p className="text-lg sm:text-2xl w-full transition">{description}</p>
           <a
             className="flex items-center w-fit gap-1 px-2 py-2 rounded-sm mt-5 cursor-pointer hover:scale-105 transition"
             href={url}
             target="_blank"
-            style={{ backgroundColor: color }}
-          >
+            style={{ backgroundColor: color }}>
             <img src={Cart} className="w-8" />
-            <p className="text-[#000000] mt-0.5 text-2xl">COMPRAR AHORA</p>
+            <p className="text-[#000000] mt-0.5 text-xl sm:text-2xl">
+              COMPRAR AHORA
+            </p>
           </a>
         </div>
       </div>
 
-      <div className="flex flex-col items-center justify-center relative sm:pt-5 sm:pb-10">
+      <div className="flex flex-col items-center justify-center relative pt-5 pb-15">
         <div className="flex flex-col justify-center items-center w-full">
           <img
             src={image}
@@ -118,24 +118,22 @@ export default function Hero() {
             {MonsterEnergyList.map((monster) => (
               <button
                 key={monster.title}
-                className="hover:scale-110 transition-transform px-5 py-2 relative"
+                className="hover:scale-110 transition-transform px-3 lg:px-5 py-2 relative"
                 onClick={() => {
                   setColor(monster.color);
                   setTitle(monster.title);
                   setDescription(monster.description);
                   setImage(monster.image);
                   setUrl(monster.url);
-                }}
-              >
+                }}>
                 <img src={monster.image} className="w-5 z-20" />
                 {monster.title === title ? (
                   <div
-                    className="w-2 h-8 bg-stone-900 absolute top-0 mx-1 mt-5"
+                    className="w-2 h-4 sm:h-8 bg-stone-900 absolute top-0 mx-1 mt-5"
                     style={{
                       filter: `drop-shadow(0px 10px 15px ${color}`,
                       zIndex: -1,
-                    }}
-                  ></div>
+                    }}></div>
                 ) : null}
               </button>
             ))}

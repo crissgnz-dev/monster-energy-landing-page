@@ -2,8 +2,8 @@ import Instagram from "../assets/social-media/instagram.svg";
 
 export default function Ambassador() {
   return (
-    <div className="p-15">
-      <h2 className="uppercase text-6xl border-b-2 border-green-600 font-bold">
+    <div className="p-4 md:p-15">
+      <h2 className="uppercase text-5xl md:text-6xl border-b-2 border-green-600 font-bold mt-5 mb-10">
         Embajadores
       </h2>
       <div className="flex flex-col w-full mt-5 mb-15 gap-y-10">
@@ -23,7 +23,7 @@ export default function Ambassador() {
               Además, obtuvo medalla de plata en los Juegos Panamericanos de
               2019.
             </p>
-            <div className="mt-2 flex justify-between">
+            <div className="mt-2 flex justify-between flex-wrap">
               <div className="flex items-center gap-2">
                 <img
                   className="w-6 h-fit"
@@ -44,8 +44,7 @@ export default function Ambassador() {
                 <a
                   href="https://www.instagram.com/malignobmx"
                   target="_blank"
-                  className="w-fit flex p-1 hover:scale-105 transition"
-                >
+                  className="w-fit flex p-1 hover:scale-105 transition">
                   <img src={Instagram} className="w-7 " />
                 </a>
               </div>
@@ -67,7 +66,7 @@ export default function Ambassador() {
               sus esfuerzos le recompensaron con el premio al Novato del Año en
               la categoría intermedia.
             </p>
-            <div className="mt-2 flex justify-between">
+            <div className="mt-2 flex justify-between flex-wrap">
               <div className="flex items-center gap-2">
                 <img
                   className="w-6 h-fit"
@@ -88,8 +87,7 @@ export default function Ambassador() {
                 <a
                   href="https://www.instagram.com/pecco63/"
                   target="_blank"
-                  className="w-fit flex p-1 hover:scale-105 transition"
-                >
+                  className="w-fit flex p-1 hover:scale-105 transition">
                   <img src={Instagram} className="w-7 " />
                 </a>
               </div>
@@ -101,8 +99,7 @@ export default function Ambassador() {
       <a
         href="https://www.monsterenergy.com/es-ar/roster/"
         target="_blank"
-        className="text-green-500 text-3xl border-2 px-12 py-2 rounded-lg uppercase active:text-green-300 "
-      >
+        className="text-green-500 text-2xl mb:text-3xl border-2 px-12 py-2 rounded-lg uppercase active:text-green-300 ">
         Ver más
       </a>
     </div>
